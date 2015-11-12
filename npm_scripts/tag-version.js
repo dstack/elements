@@ -23,8 +23,10 @@ var pkgVer = pkg.version || '',
   });
 
 function createTag(){
-  var ver = 'v'+newTag;
-  // update package.json
+  console.log('Creating Git Tag. Pushing up Git Tag.');
+  execSync('git tag '+ newTag + ' & git push origin HEAD --tags', {stdio: 'inherit'});
+  console.log('~~FIN~~');
+  process.exit(0);
 }
 
 function promptForVersion(cb){
@@ -34,12 +36,13 @@ function promptForVersion(cb){
       promptForVersion();
     }
     else{
+      rl.close();
       newTag = ans;
+      console.log('Updating package.json');
       pkg.version = ans;
       fs.writeFileSync('./package.json', JSON.stringify(pkg, null, '\t') );
-      //execSync()
-      execSync('git add -A & git commit -m "version bumped to ' + ans);
-      rl.close();
+      console.log('Committing new package.json');
+      execSync('git add -A & git commit -m "chore: version bumped to ' + ans);
       cb();
     }
   });

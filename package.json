@@ -1,31 +1,33 @@
 {
-	"name": "@pearson/elements",
-	"version": "1.0.0",
-	"description": "Pearson web UI elements",
-	"scripts": {
-		"start": "gulp",
-		"test": "echo \"Error: no test specified\" && exit 1",
-		"tag": "node npm_scripts/tag-version.js"
-	},
-	"repository": {
-		"type": "git",
-		"url": "https://github.com/dstack/elements"
-	},
-	"keywords": [],
-	"author": "Pearson UI components team",
-	"license": "MIT",
-	"engines": {
-		"node": "^4.0.0"
-	},
-	"devDependencies": {
-		"autoprefixer": "^6.1.0",
-		"browser-sync": "^2.10.0",
-		"gulp": "^3.9.0",
-		"gulp-cssnano": "^2.0.0",
-		"gulp-postcss": "^6.0.1",
-		"gulp-rename": "^1.2.2",
-		"gulp-sass": "^2.1.0",
-		"metalsmith": "^2.1.0",
-		"semver": "^5.0.3"
-	}
+  "name": "@dstack/elements",
+  "version": "1.0.3",
+  "description": "Pearson web UI elements",
+  "scripts": {
+    "start": "gulp",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "tag": "node npm_scripts/tag-version.js",
+    "changelog": "node npm_scripts/gen-changelog.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/dstack/elements"
+  },
+  "keywords": [],
+  "author": "Pearson UI components team",
+  "license": "MIT",
+  "engines": {
+    "node": "^4.0.0"
+  },
+  "devDependencies": {
+    "autoprefixer": "^6.1.0",
+    "browser-sync": "^2.10.0",
+    "changelog": "^1.0.7",
+    "gulp": "^3.9.0",
+    "gulp-cssnano": "^2.0.0",
+    "gulp-postcss": "^6.0.1",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^2.1.0",
+    "metalsmith": "^2.1.0",
+    "semver": "^5.0.3"
+  }
 }
