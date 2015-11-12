@@ -1,19 +1,7 @@
-var changelog = require('changelog'),
-  fs = require('fs'),
-  pkg = require('../package');
+var cc = require('conventional-changelog'),
+  fs = require('fs');
 
-
-var pkgName = pkg.name.replace('@', '');
-changelog.generate(pkgName).then(function(data){ var output = changelog.markdown(data); console.log(output); })
-
-// use conventional-changelog
-/*
-
-var conventionalChangelog = require('conventional-changelog');
-
-conventionalChangelog({
-  preset: 'angular'
-})
-  .pipe(process.stdout);
-
-*/
+cc({
+  preset: 'angular',
+  releaseCount: 0
+}).pipe(fs.createWriteStream('CHANGELOG.md'));

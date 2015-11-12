@@ -24,7 +24,7 @@ var pkgVer = pkg.version || '',
 
 function createTag(){
   console.log('Creating Git Tag. Pushing up Git Tag.');
-  execSync('git tag '+ newTag + ' & git push origin HEAD --tags', {stdio: 'inherit'});
+  execSync('git tag -a -m "release: ' + newTag + '" '+ newTag);
   console.log('~~FIN~~');
   process.exit(0);
 }
