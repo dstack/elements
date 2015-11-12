@@ -2,6 +2,10 @@
 ## [1.0.3](https://github.com/dstack/elements/compare/1.0.3...v1.0.3) (2015-11-12)
 
 
+### Features
+
+* new release scripts primary ([aea3337](https://github.com/dstack/elements/commit/aea3337))
+
 
 
 <a name="1.0.3"></a>
