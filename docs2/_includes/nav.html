@@ -1,0 +1,18 @@
+<div class="d-sidebar">
+  <nav>
+    <ul>
+      {% for item in site.data.nav %}
+        <li>
+          <a href="{{ site.baseUrl }}/{{ item.title | lower | replace(' ', '-') }}/">{{ item.title }}</a>
+          {% if item.items %}
+            <ul>
+              {% for section in item.items %}
+                <li><a href="{{ site.baseUrl }}/{{ item.title | lower | replace(' ', '-') }}/{{ section.title | lower | replace(' ', '-') }}/">{{ section.title }}</a></li>
+              {% endfor %}
+            </ul>
+          {% endif %}
+        </li>
+      {% endfor %}
+    </ul>
+  </nav>
+</div>
