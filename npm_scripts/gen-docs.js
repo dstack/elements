@@ -23,7 +23,7 @@ MetalSmith(__dirname)
     console.log(err);
   }
   console.log('pushing to gh-pages')
-  exec('git push origin "git subtree split --prefix _gh_pages origin gh-pages":gh-pages --force', {stdio: 'inherit'});
+  exec('git subtree push --prefix _gh_pages origin gh-pages', {stdio: 'inherit'});
   //
 });
 // use metalsmith to generate to _gh_pages
