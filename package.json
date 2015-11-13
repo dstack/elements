@@ -1,13 +1,14 @@
 {
   "name": "@dstack/elements",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Pearson web UI elements",
   "scripts": {
     "start": "gulp",
     "test": "echo \"Error: no test specified\" && exit 1",
     "tag": "node npm_scripts/tag-version.js",
     "changelog": "node npm_scripts/gen-changelog.js",
-    "docs": "node npm_scripts/gen-docs.js"
+    "docs": "node npm_scripts/gen-docs.js",
+    "release": "node npm_scripts/release.js"
   },
   "repository": {
     "type": "git",
