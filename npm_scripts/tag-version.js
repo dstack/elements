@@ -42,7 +42,7 @@ function promptForVersion(cb){
       pkg.version = ans;
       fs.writeFileSync('./package.json', JSON.stringify(pkg, null, '\t') );
       console.log('Committing new package.json');
-      execSync('git add -A & git commit -m "chore: version bumped to ' + ans);
+      execSync('git add package.json & git commit -m "chore: version bumped to ' + ans);
       cb();
     }
   });
