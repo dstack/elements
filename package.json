@@ -6,7 +6,8 @@
     "start": "gulp",
     "test": "echo \"Error: no test specified\" && exit 1",
     "tag": "node npm_scripts/tag-version.js",
-    "changelog": "node npm_scripts/gen-changelog.js"
+    "changelog": "node npm_scripts/gen-changelog.js",
+    "docs": "node npm_scripts/gen-docs.js"
   },
   "repository": {
     "type": "git",
@@ -28,6 +29,14 @@
     "gulp-rename": "^1.2.2",
     "gulp-sass": "^2.1.0",
     "metalsmith": "^2.1.0",
-    "semver": "^5.0.3"
+    "metalsmith-drafts": "0.0.1",
+    "metalsmith-in-place": "^1.3.2",
+    "metalsmith-layouts": "^1.4.2",
+    "metalsmith-markdown": "^0.2.1",
+    "metalsmith-permalinks": "^0.4.0",
+    "metalsmith-sass": "^1.3.0",
+    "metalsmith-templates": "^0.7.0",
+    "semver": "^5.0.3",
+    "swig": "^1.4.2"
   }
 }

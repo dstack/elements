@@ -1,5 +1,5 @@
 ---
-layout: docs
+layout: docs.html
 title: Card
 section: elements
 permalink: /elements/card/

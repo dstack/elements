@@ -1,5 +1,5 @@
 ---
-layout: docs
+layout: docs.html
 title: Buttons
 section: elements
 permalink: /elements/buttons/

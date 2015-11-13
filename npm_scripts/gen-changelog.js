@@ -11,6 +11,5 @@ var ccStream = cc({
 
 ccStream.on('close', function(){
   console.log('CHANGELOG.md generated');
-
   exec('git add -A & git commit -m "chore: generated changelog"');
 });
